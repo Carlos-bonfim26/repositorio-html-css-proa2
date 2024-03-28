@@ -1,0 +1,193 @@
+@import url("https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&display=swap");
+:root {
+  --preto: #000000;
+  --branco: #f7f3f5;
+  --cinza: #6e7272;
+  --amarelo: #fdd821;
+}
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+  font-family: "Dosis", sans-serif;
+  font-optical-sizing: auto;
+}
+body {
+  background-color: var(--branco);
+}
+/*header*/
+header {
+  padding: 1% 3%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+#logo {
+  font-size: 2rem;
+  color: var(--preto);
+}
+#logo span {
+  color: var(--amarelo);
+}
+nav {
+  display: flex;
+}
+#navbar {
+  display: none;
+  align-items: center;
+}
+.nav-link,
+.nav-item {
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: var(--cinza);
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+}
+.nav-link:hover {
+  text-decoration: underline solid 3px var(--amarelo);
+  text-underline-offset: 0.8rem;
+}
+.nav-item {
+  color: var(--preto);
+  font-size: 1.5rem;
+}
+.fa-xmark {
+  float: right;
+}
+.fa-bars {
+  display: flex;
+}
+#navbar-responsive {
+  padding: 4%;
+  display: none;
+  flex-direction: column;
+}
+/*main*/
+main {
+  margin: 1% 3%;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+}
+.container {
+  margin-top: 3rem;
+  width: 100%;
+}
+h2 span,
+h3 span {
+  color: var(--amarelo);
+  font-weight: bolder;
+}
+h2 {
+  font-size: 3.5rem;
+}
+h3 {
+  font-size: 2rem;
+}
+.container-input {
+  display: flex;
+  background-color: white;
+  width: 14rem;
+  align-items: center;
+  justify-content: center;
+  border-radius: 1rem;
+  box-shadow: 0px 1px 1px var(--cinza);
+}
+.container-input button {
+  width: 15%;
+  margin-bottom: 0.5rem;
+  font-size: 1.2rem;
+  background-color: transparent;
+  border: none;
+  color: var(--cinza);
+}
+.container-input input {
+  font-size: 1.2rem;
+  border: none;
+  padding: 0.2rem;
+  height: 100%;
+  width: 85%;
+}
+.container p {
+  color: var(--cinza);
+  margin-top: 1rem;
+  line-height: 1.5rem;
+}
+.container button {
+  padding: 0.4rem 0.2rem;
+  font-size: 1.2rem;
+  border-radius: 1rem;
+  margin-top: 1rem;
+  transition: 0.5s all ease-in;
+}
+.btn_1 {
+  background-color: var(--amarelo);
+  color: var(--branco);
+  border: none;
+  margin-right: 0.5rem;
+  box-shadow: 1px 1px 1px var(--cinza);
+}
+.btn_1:hover {
+  box-shadow: 2px 3px 10px var(--amarelo);
+}
+.btn_2 {
+  color: var(--amarelo);
+  border: 2px solid var(--amarelo);
+}
+.btn_2:hover {
+  background-color: var(--amarelo);
+  color: white;
+}
+.container-icons {
+  display: flex;
+  align-items: center;
+}
+.container-icons div {
+  width: 4rem;
+  border-bottom: var(--cinza) 2px solid;
+}
+.icon {
+  color: var(--cinza);
+  margin: 0.5rem;
+  font-size: 1.3rem;
+}
+/*img*/
+.container-img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.container-img img {
+  width: 80%;
+}
+@media screen and (min-width: 600px) {
+ #logo{
+    font-size: 2.5rem;
+ }
+    #navbar {
+    display: flex;
+  }
+  .fa-bars,
+  .fa-xmark,
+  #navbar-responsive {
+    display: none;
+  }
+  main {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .container h2{
+    font-size: 4.2rem;
+  }
+  .container h3{
+    font-size: 3rem;
+  }
+  .container-input{
+    width: 18rem;
+    height: 2.5rem;
+  }
+  .container-img img {
+    width: 50%;
+  }
+}
