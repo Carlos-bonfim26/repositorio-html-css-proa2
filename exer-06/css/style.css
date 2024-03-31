@@ -68,7 +68,7 @@ header{
     outline: none;
 }
 .nav-link{
-    color: var(--cinza);
+    color: var(--branco);
     font-weight: 500;
     position: relative;
 }
